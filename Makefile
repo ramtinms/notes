@@ -120,6 +120,7 @@ cf_upload: publish
 
 github: publish
 	cd $(OUTPUTDIR)
+	echo $(OUTPUTDIR)
 	git add -A
 	git commit -m "updating content"
 	git push origin $(GITHUB_PAGES_BRANCH)
