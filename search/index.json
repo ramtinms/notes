@@ -1,0 +1,18 @@
+{
+    "pages": [
+        {
+            "text": "Lorem ipsum dolor sit amet",
+            "tags": "Example Category",
+            "url": "http://oncrashreboot.com/plugin-example.html",
+            "id": "DLbook-ch2",
+            "title": "Everything you want to know about Lorem Ipsum"
+        },
+        {
+            "text": "Lorem ipsum dolor sit amet",
+            "tags": "Example Category",
+            "url": "http://oncrashreboot.com/plugin-example.html",
+            "id": "test",
+            "title": "Everything you want to know about Lorem Ipsum"
+        }
+    ]
+}
