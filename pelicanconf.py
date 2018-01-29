@@ -12,7 +12,7 @@ TIMEZONE = 'America/Vancouver'
 
 DEFAULT_LANG = 'en'
 
-THEME = 'template/pelican-alchemy/alchemy/'
+THEME = 'themes/pelican-alchemy/alchemy/'
 
 PLUGIN_PATHS = 'plugins/'
 
@@ -43,4 +43,4 @@ TWITTER_USERNAME = "RamtinMehdizade"
 DEFAULT_PAGINATION = 4
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
