@@ -4,4 +4,4 @@
 	ignore = all
 [submodule "themes/pelican-alchemy"]
 	path = themes/pelican-alchemy
-	url = https://github.com/nairobilug/pelican-alchemy
+	url =  ssh://git@github.com/ramtinms/pelican-alchemy.git 
