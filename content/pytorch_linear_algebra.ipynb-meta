@@ -1,0 +1,7 @@
+Title: Linear Algebra using Torch
+Date: 2018-01-30 10:08
+Modified: 2018-01-30 10:08
+Category: python
+Authors: Ramtin Seraj
+Slug: pytorch_linear_algebra
+Summary: Here is a list of linear algrebra functions provided by pytorch. The order of the concepts in this notebook is based on deep learning book (by Goodfellow et. al) chapter 2.
