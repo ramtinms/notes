@@ -123,4 +123,9 @@ github: publish
 	cd $(OUTPUTDIR) ; git commit -m "updating content"
 	cd $(OUTPUTDIR) ; git push origin $(GITHUB_PAGES_BRANCH)
 
+notebook:
+	git add -A
+	git commit -m "updating notebooks"
+	git push origin $(GITHUB_PAGES_BRANCH)
+
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
