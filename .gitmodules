@@ -1,6 +1,6 @@
 [submodule "output"]
 	path = output
-	url = https://github.com/ramtinms/random-walk.git
+	url = ssh://git@github.com/ramtinms/random-walk.git
 	ignore = all
 [submodule "themes/pelican-alchemy"]
 	path = themes/pelican-alchemy
