@@ -1,11 +1,10 @@
-import json
 import re
 
 
 class SimpleMarkdownParser():
 
     def __init__(self):
-        self._main_header_pattern = re.compile("^#\W([\w ]+)")
+        self._main_header_pattern = re.compile("^#\W([\w \.\,\!\;\:\-\_\'\\\"]+)")
         self._subheader_pattern = re.compile("^##+\W|##+\W")
         self._linebreak_pattern = re.compile("\n==+\n|^==+\n|\n--+\n|^--+\n")
         self._strong_emphasis_pattern = re.compile("\*{2}|\_{2}([\w \.\,\!\;\:\-\'\\\"]+)\*{2}|\_{2}")
@@ -52,6 +51,8 @@ class SimpleMarkdownParser():
             title = self.match_title(text)
         if get_cleaned_text:
             cleaned_text = self.get_cleaned_text(text)
+
+        return title, cleaned_text
 
     def text_get_cleaned_text(self):
         # test Headers

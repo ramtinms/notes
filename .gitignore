@@ -1,5 +1,6 @@
 # ignore outputs
 output/.*
+*.pid
 
 ### OSX ###
 *.DS_Store

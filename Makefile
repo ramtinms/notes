@@ -97,7 +97,7 @@ stopserver:
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 publish:
-	#python publish.py
+	$(PY) publish.py
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 ssh_upload: publish
@@ -119,10 +119,8 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
-	cd $(OUTPUTDIR)
-	echo $(OUTPUTDIR)
-	git add -A
-	git commit -m "updating content"
-	git push origin $(GITHUB_PAGES_BRANCH)
+	cd $(OUTPUTDIR) ; git add -A
+	cd $(OUTPUTDIR) ; git commit -m "updating content"
+	cd $(OUTPUTDIR) ; git push origin $(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
