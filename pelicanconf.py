@@ -8,6 +8,8 @@ SITEURL = 'https://ramtinms.github.io/random-walk/'
 
 PATH = 'content'
 
+DESCRIPTION = 'Random collection of my notes.'
+
 TIMEZONE = 'America/Vancouver'
 
 DEFAULT_LANG = 'en'
@@ -22,6 +24,8 @@ IGNORE_FILES = ['.ipynb_checkpoints']
 
 MARKUP = ('md', 'ipynb')
 
+HIDE_AUTHORS = True
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -30,7 +34,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('about', 'https://ramtinms.github.io'),)
+# LINKS = (('Author', 'https://ramtinms.github.io'),)
 
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/RamtinMehdizade'),

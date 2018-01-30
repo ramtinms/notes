@@ -23,6 +23,17 @@ check `.gitmodules` file and make sure you have `ignore = all`
         ignore = all
 ```
 
+
+## test locally 
+to start server
+```
+make devserver
+```
+
+to stop server
+```
+make stopserver
+```
 ## steps to publish content
 
 #### add notebooks to `note` repo

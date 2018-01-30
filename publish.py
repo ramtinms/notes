@@ -218,7 +218,7 @@ class Publisher():
                     category = "python"
                 if lang == 'python' and lang_version.startswith('2.'):
                     packages, classes, methods = self.py3_parser.process(cell.get('source'))
-                    for p in packages or []:
+                    for p in packages:
                         tags += ['python_package: {}'.format(p)]
                     if classes:
                         print(classes)
