@@ -26,7 +26,7 @@ check `.gitmodules` file and make sure you have `ignore = all`
         ignore = all
 ```
 
-1. install pelican 
+2. install pelican 
 ```
 pip install pelican
 ```
