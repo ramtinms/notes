@@ -4,8 +4,11 @@ My jupyter notebooks and codes to publish them
 
 ## setup
 
-1. clone this repo
-1. makesure submodules are connected (one for theme and one for blog)
+1. clone this repo with submodules
+```
+git clone --recurse-submodules git@github.com:ramtinms/notes.git
+```
+or clone it and setup submodules(one for theme and one for blog)
 ```
 mkdir output
 cd output
