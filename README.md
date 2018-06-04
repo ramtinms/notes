@@ -9,7 +9,7 @@ My jupyter notebooks and codes to publish them
 ```
 mkdir output
 cd output
-git submodule add ssh://git@github.com/ramtinms/random-walk.git 
+git submodule add -f ssh://git@github.com/ramtinms/random-walk.git 
 
 cd ..
 git submodule add https://github.com/nairobilug/pelican-alchemy themes/pelican-alchemy
@@ -23,6 +23,10 @@ check `.gitmodules` file and make sure you have `ignore = all`
         ignore = all
 ```
 
+Install pelican 
+```
+pip install pelican
+```
 
 ## test locally 
 to start server
